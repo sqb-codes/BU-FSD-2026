@@ -20,9 +20,128 @@
     -->
 
     <form action="#" method="POST">
-        <input type="text" placeholder="Enter your name" name="username">
-        <input type="password" placeholder="Enter your password" name="userpwd">
-        <input type="submit" value="Login">
+        <table>
+            <tr>
+                <td>
+                    <label for="username">Enter your name</label>
+                </td>
+                <td>
+                    <input required type="text" id="username" placeholder="Enter your name" value="Ravi" readonly disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="usermail">Enter your email</label>
+                </td>
+                <td>
+                    <input autofocus required type="email" id="usermail" placeholder="Enter your email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter your password
+                </td>
+                <td>
+                    <input type="password" placeholder="Enter your password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select Country
+                </td>
+                <td>
+                    <select>
+                        <option>Select Country</option>
+                        <optgroup label="Asia">
+                            <option value="ind">India</option>
+                            <option value="ch">China</option>
+                            <option value="sl">Sri Lanka</option>
+                        </optgroup>
+                        <option value="eng">England</option>
+                        <option value="aus">Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select gender
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select Programming
+                </td>
+                <td>
+                    <input type="checkbox"> Python
+                    <input type="checkbox"> JavaScript
+                    <input type="checkbox"> Java
+                    <input type="checkbox"> Node
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your age</td>
+                <td>
+                    <input type="number" min="18" max="60">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter mobile number</td>
+                <td>
+                    <input type="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input onchange="op.value=value" type="range" value="10" min="1" max="20">
+                    <output id="op">10</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload resume</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Your progress</td>
+                <td>
+                    <progress value="20" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your message</td>
+                <td>
+                    <textarea rows="5" cols="40"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="reset">Reset</button>
+                </td>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
     </form>
     
 </body>
